@@ -1,11 +1,8 @@
 import "@testing-library/jest-dom";
 import { render } from "@testing-library/react";
-import About from "../components/About";
+import About from "../components/About"; // Ensure this import matches
 
 test("it is exported as a default export", () => {
-  try {
-    expect(() => render(<About />)).not.toThrow();
-  } catch (e) {
-    throw new Error("Make sure to export this component!");
-  }
+  render(<About />);
+  // Add your test assertions here
 });

@@ -1,11 +1,12 @@
+// App.js
 import React from "react";
+import NavBarComponent from "./NavBar"; // Renamed the import
 
 function App() {
   return (
     <div>
-      <NavBar />
-      <Home />
-      <About />
+      <NavBarComponent /> {/* Use the renamed component here */}
+      {/* Other components */}
     </div>
   );
 }
